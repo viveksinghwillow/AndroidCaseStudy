@@ -14,8 +14,6 @@ import kotlinx.android.synthetic.main.item_emp.*
 
 class DetailFragment : Fragment() {
     private val TAG= javaClass.simpleName
-    //sample
-
     companion object{
         fun newInstance(): DetailFragment{
             return DetailFragment()
