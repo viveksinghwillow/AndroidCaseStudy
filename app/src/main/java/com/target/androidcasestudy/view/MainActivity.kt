@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
             itemViewModel?.getItemListFromDb(appDatabase)
         }
         itemViewModel?.itemLiveData?.observe(this, Observer {
-            Log.d("onLiveDataChange","live data changed")
-
             itemFragment?.getItemList(it)
         })
 
